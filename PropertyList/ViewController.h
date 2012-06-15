@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UISwitch *_switch;
+    IBOutlet UISlider *_slider;
+    IBOutlet UITextField *_textField;
+}
 
+@property (nonatomic, strong) NSMutableDictionary *prefDictionary;
+
+- (IBAction)freezeButton:(id)sender;
 @end
